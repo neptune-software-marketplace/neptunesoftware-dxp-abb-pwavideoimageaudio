@@ -1,0 +1,47 @@
+{
+	"id": "349D0F30-5112-ED11-BD6E-000D3AB1D9FF",
+	"createdAt": "2022-08-02T10:52:23.650Z",
+	"createdBy": "kristin.eliassen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-pwavideoimageaudio",
+		"testServers": []
+	},
+	"name": "neptunesoftware-dxp-abb-pwavideoimageaudio",
+	"description": null,
+	"ver": "22.8.2.1053",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "3F945C80-5BB1-EB11-A7AC-A085FCBCB3C3",
+			"ver": "22.8.2.1252",
+			"application": "pwa_camera",
+			"title": "PWA - Camera",
+			"description": "PWA - Camera"
+		}
+	],
+	"api": [],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": [],
+	"connector": []
+}

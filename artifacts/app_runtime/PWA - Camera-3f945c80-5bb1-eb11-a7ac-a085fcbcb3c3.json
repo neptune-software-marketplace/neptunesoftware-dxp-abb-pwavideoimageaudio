@@ -1,0 +1,832 @@
+{
+	"id": "3f945c80-5bb1-eb11-a7ac-a085fcbcb3c3",
+	"createdAt": "2022-02-04T15:51:48.066Z",
+	"updatedAt": "2022-08-02T10:52:38.840Z",
+	"createdBy": "luuk.wosten@neptune-software.com",
+	"changedBy": "kristin.eliassen@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "1",
+			"fieldName": "oShell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "2",
+					"fieldName": "oApp",
+					"fieldParent": "1",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "4",
+							"fieldName": "oPage",
+							"fieldParent": "2",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "PWA Camera",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "df0b5304-66a9-4e78-9048-f5dbcb5a2667",
+									"fieldName": "oBarFooter",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "6a213380-75b9-421a-e08d-015d32b771e2",
+											"fieldName": "Middle",
+											"fieldParent": "df0b5304-66a9-4e78-9048-f5dbcb5a2667",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentMiddle",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "da800d81-1713-45ce-dcf3-7304dd86f455",
+													"fieldName": "oButtonCameraUpload",
+													"fieldParent": "6a213380-75b9-421a-e08d-015d32b771e2",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Take or Upload Picture",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://camera",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"fileElem = document.getElementById(\"file-input\");\r",
+																"fileElem.click();"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "54170b0e-362e-49a1-f704-49026d06c5b3",
+									"fieldName": "oBarSubHeader",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setCustomHeader",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "2491ac46-dab5-4646-be99-b6136b302443",
+											"fieldName": "Left",
+											"fieldParent": "54170b0e-362e-49a1-f704-49026d06c5b3",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentLeft",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "5a1d9059-0d45-421d-92cb-556505aa5572",
+													"fieldName": "oText",
+													"fieldParent": "2491ac46-dab5-4646-be99-b6136b302443",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "PWA Camera & Audio",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "b02cafb5-17d1-4bc9-817f-91e9fd6b4f77",
+											"fieldName": "Middle",
+											"fieldParent": "54170b0e-362e-49a1-f704-49026d06c5b3",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "4b2b7b5f-89c8-44cf-db35-62fdae07ad92",
+													"fieldName": "oButtonLiveCamera",
+													"fieldParent": "b02cafb5-17d1-4bc9-817f-91e9fd6b4f77",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Live Stream",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiSmallMarginBeginEnd",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://video",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"//get Video",
+																"getStream('video');"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "d7e61492-d83f-4a3a-f8ff-03ba14928d3a",
+													"fieldName": "oButtonLiveAudio",
+													"fieldParent": "b02cafb5-17d1-4bc9-817f-91e9fd6b4f77",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Live Audio",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiSmallMarginBeginEnd",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://microphone",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"//get Audio",
+																"getStream('audio');"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "07dd158d-ac84-48b9-88ed-934dd1aa8484",
+													"fieldName": "oButtonStop",
+													"fieldParent": "b02cafb5-17d1-4bc9-817f-91e9fd6b4f77",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Stop",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiSmallMarginBeginEnd",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://stop",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"const videoPlayer = document.getElementById('oHTMLObjectVideoPlayer');\r",
+																"videoPlayer.srcObject.getVideoTracks().forEach(track => track.stop());\r",
+																"\r",
+																"const audioPlayer = document.getElementById('oHTMLObjectAudioPlayer');\r",
+																"audioPlayer.srcObject.getAudioTracks().forEach(track => track.stop());"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "8343b4ac-a148-4bde-bb7e-e2dc3d189d33",
+									"fieldName": "oPanelCaptureV",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Panel",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "headerText",
+											"grouping": "Properties",
+											"value": "Capture Video",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enableCompactMode",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "7bccf05c-1621-40ca-a27c-3d3d558f428e",
+											"fieldName": "oHBoxLiveCameraStream",
+											"fieldParent": "8343b4ac-a148-4bde-bb7e-e2dc3d189d33",
+											"fieldType": "sap.m.HBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClassMargin",
+													"grouping": "Properties",
+													"value": "sapUiMediumMarginBottom",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "Tint",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "justifyContent",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "alignItems",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "alignContent",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d7ca1674-8116-4cb9-e05b-610337479ca1",
+													"fieldName": "oHTMLObjectVideoPlayer",
+													"fieldParent": "7bccf05c-1621-40ca-a27c-3d3d558f428e",
+													"fieldType": "sap.ui.core.HTML",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "b9857bf9-8f7c-48c6-e394-769dc195e331",
+									"fieldName": "oPanelCaptureA",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Panel",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "headerText",
+											"grouping": "Properties",
+											"value": "Capture Audio",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "enableCompactMode",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ff728222-dd34-45b2-bf85-96cefa62a942",
+											"fieldName": "oHBoxLiveAudioStream",
+											"fieldParent": "b9857bf9-8f7c-48c6-e394-769dc195e331",
+											"fieldType": "sap.m.HBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClassMargin",
+													"grouping": "Properties",
+													"value": "sapUiMediumMarginBottom",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "Tint",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "justifyContent",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "alignItems",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "alignContent",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "68f23d0f-6345-470e-fc9c-c43188f2c8cb",
+													"fieldName": "oHTMLObjectAudioPlayer",
+													"fieldParent": "ff728222-dd34-45b2-bf85-96cefa62a942",
+													"fieldType": "sap.ui.core.HTML",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "86132b88-4860-4b33-aedb-4d3e8644c77e",
+									"fieldName": "oPanelPreview",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Panel",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "headerText",
+											"grouping": "Properties",
+											"value": "Preview",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "06e1b866-cc97-4a06-9dea-b7081788c7fc",
+											"fieldName": "oFlexBoxCameraUpload",
+											"fieldParent": "86132b88-4860-4b33-aedb-4d3e8644c77e",
+											"fieldType": "sap.m.FlexBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "DarkerTint",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "justifyContent",
+													"grouping": "Properties",
+													"value": "Center",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "573d52a6-4a1e-4bdc-aedd-6d15407d8d04",
+													"fieldName": "oHTMLObjectCameraUpload",
+													"fieldParent": "06e1b866-cc97-4a06-9dea-b7081788c7fc",
+													"fieldType": "sap.ui.core.HTML",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "f173a294-b4a3-49f6-c593-2b9387ac3631",
+											"fieldName": "oHBoxCameraUploadDisplayArea",
+											"fieldParent": "86132b88-4860-4b33-aedb-4d3e8644c77e",
+											"fieldType": "sap.m.HBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "Tint",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d5c70744-eea9-41af-83a8-650627c4a780",
+													"fieldName": "oImage",
+													"fieldParent": "f173a294-b4a3-49f6-c593-2b9387ac3631",
+													"fieldType": "sap.m.Image",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "100%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "height",
+															"grouping": "Properties",
+															"value": "100%",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "dcafca4f-cfd5-42fc-f4eb-91fc863001b0",
+					"fieldName": "PWA_Camera_Library",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "98e8e745-984d-4a43-d598-e72ed53e8b5c",
+							"fieldName": "oJavascriptLiveCamera",
+							"fieldParent": "dcafca4f-cfd5-42fc-f4eb-91fc863001b0",
+							"fieldType": "neptune.Script",
+							"script": [
+								"==OBJECT STRING==",
+								"sap.ui.getCore().attachInit(function(data) {\r",
+								"    oHTMLObjectVideoPlayer.setContent('<video controls autoplay style=\"height:180px; width: 240px;\"></video>')\r",
+								"    oHTMLObjectAudioPlayer.setContent('<audio controls></audio>')\r",
+								"});\r",
+								"\r",
+								"\r",
+								"function getUserMedia(constraints) {\r",
+								"  // if Promise-based API is available, use it\r",
+								"  if (navigator.mediaDevices) {\r",
+								"    return navigator.mediaDevices.getUserMedia(constraints);\r",
+								"  }\r",
+								"    \r",
+								"  // otherwise try falling back to old, possibly prefixed API...\r",
+								"  var legacyApi = navigator.getUserMedia || navigator.webkitGetUserMedia ||\r",
+								"    navigator.mozGetUserMedia || navigator.msGetUserMedia;\r",
+								"    \r",
+								"  if (legacyApi) {\r",
+								"    // ...and promisify it\r",
+								"    return new Promise(function (resolve, reject) {\r",
+								"      legacyApi.bind(navigator)(constraints, resolve, reject);\r",
+								"    });\r",
+								"  }\r",
+								"}\r",
+								"\r",
+								"function getStream (type) {\r",
+								"  if (!navigator.mediaDevices && !navigator.getUserMedia && !navigator.webkitGetUserMedia &&\r",
+								"    !navigator.mozGetUserMedia && !navigator.msGetUserMedia) {\r",
+								"    alert('User Media API not supported.');\r",
+								"    return;\r",
+								"  }\r",
+								"\r",
+								"  var constraints = {};\r",
+								"  constraints[type] = true;\r",
+								"  \r",
+								"  getUserMedia(constraints)\r",
+								"    .then(function (stream) {\r",
+								"      var mediaControl = document.querySelector(type);\r",
+								"      \r",
+								"      if ('srcObject' in mediaControl) {\r",
+								"        mediaControl.srcObject = stream;\r",
+								"      } else if (navigator.mozGetUserMedia) {\r",
+								"        mediaControl.mozSrcObject = stream;\r",
+								"      } else {\r",
+								"        mediaControl.src = (window.URL || window.webkitURL).createObjectURL(stream);\r",
+								"      }\r",
+								"      \r",
+								"      mediaControl.play();\r",
+								"    })\r",
+								"    .catch(function (err) {\r",
+								"      alert('Error: ' + err);\r",
+								"      console.log(err);\r",
+								"    });\r",
+								"}\r",
+								"\r",
+								"\r",
+								""
+							],
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "50f8facb-5035-4e4f-ae53-b902e3b2d26c",
+							"fieldName": "oJavascriptCameraUpload",
+							"fieldParent": "dcafca4f-cfd5-42fc-f4eb-91fc863001b0",
+							"fieldType": "neptune.Script",
+							"script": [
+								"==OBJECT STRING==",
+								"// Set the File-Input to the oHTMLObject\r",
+								"sap.ui.getCore().attachInit(function(data) {\r",
+								"    oHTMLObjectCameraUpload.setContent('<input type=\"file\" accept=\"image/*\" id=\"file-input\"  style=\"display:none\" multiple>')\r",
+								"});\r",
+								"\r",
+								"// After setting the oHTMLObject, create the EventListener\r",
+								"setTimeout(function() {\r",
+								"    const fileInput = oFlexBoxCameraUpload.getDomRef();\r",
+								"    fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));\r",
+								"}, 1000);\r",
+								"\r",
+								"// Callback function from EventListener\r",
+								"function handleFileSelect(f) {\r",
+								"    var reader = new FileReader();\r",
+								"\r",
+								"    reader.onload = (function (theFile) {\r",
+								"        return function (e) {\r",
+								"            var binaryData = e.target.result;\r",
+								"\r",
+								"            // Converting Binary Data to base 64\r",
+								"            var base64String = window.btoa(binaryData);\r",
+								"\r",
+								"            var fullBase64picture = \"data:image/png;base64,\" + base64String;\r",
+								"            //console.log(base64String)\r",
+								"\r",
+								"            oImage.setSrc(fullBase64picture);\r",
+								"\r",
+								"        };\r",
+								"    })(f);\r",
+								"    reader.readAsBinaryString(f);\r",
+								"}"
+							],
+							"filePath": "ojavascriptinit",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.8.2.1252",
+	"application": "pwa_camera",
+	"title": "PWA - Camera",
+	"description": "PWA - Camera",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": true,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": [
+		"==OBJECT STRING==",
+		".Tint {\r",
+		"    background-color: rgba(255, 255, 255, 0.2);\r",
+		"}\r",
+		"\r",
+		".DarkerTint {\r",
+		"    background-color: rgba(255, 255, 255, 0.5);\r",
+		"}"
+	],
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": []
+}
