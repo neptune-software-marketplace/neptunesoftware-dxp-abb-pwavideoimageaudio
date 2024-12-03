@@ -1,5 +1,5 @@
 {
-	"id": "349D0F30-5112-ED11-BD6E-000D3AB1D9FF",
+	"id": "349d0f30-5112-ed11-bd6e-000d3ab1d9ff",
 	"createdAt": "2022-08-02T10:52:23.650Z",
 	"createdBy": "kristin.eliassen@neptune-software.com",
 	"git": {
@@ -13,7 +13,7 @@
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "3F945C80-5BB1-EB11-A7AC-A085FCBCB3C3",
+			"id": "3f945c80-5bb1-eb11-a7ac-a085fcbcb3c3",
 			"ver": "22.8.2.1252",
 			"application": "pwa_camera",
 			"title": "PWA - Camera",
